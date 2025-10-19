@@ -53,13 +53,4 @@ return {
 			)
 		end,
 	},
-	{
-		"mfussenegger/nvim-dap",
-		config = function()
-			vim.keymap.set("n", "<leader>dt", ":DapToggleBreakpoint<CR>")
-			vim.keymap.set("n", "<leader>dx", ":DapTerminate<CR>")
-			vim.keymap.set("n", "<leader>do", "DapStepOver<CR>")
-		end,
-	},
-	{ "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
 }
